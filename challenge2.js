@@ -7,8 +7,10 @@
  * greet("Hamza") logs "Hello Hamza"
  */
 function greet(name) {
-  // Your code here
+  console.log(`Hello ${name}`);
 }
+
+greet("yasmeen");
 
 /**
  * isOdd(n):
@@ -20,8 +22,15 @@ function greet(name) {
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  // Your code here
+  if (n % 2 == 0){
+    console.log("False");
+  }
+  else{
+    console.log("True");
+  }
 }
+
+isOdd (5);
 
 /**
  * oddsSmallerThan(n):
@@ -33,8 +42,20 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // Your code here
+  let count = 0;
+  for (let i = 0; i < n; i++){
+    n = n-2;
+    if (n == 0){
+      return;
+    }
+    else{
+      count++;
+    }
+  }
+  console.log(count);
 }
+
+oddsSmallerThan(7);
 
 /**
  * squareOrDouble(n):
@@ -47,5 +68,11 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  // Your code here
+  if(n%2 == 0){
+    console.log(n*2);
+  }else{
+    console.log(n**2);
+  }
 }
+
+squareOrDouble(9);
